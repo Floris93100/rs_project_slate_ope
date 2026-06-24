@@ -101,7 +101,7 @@ python Optimization.py --value_metric NDCG --ensemble 1000 --leaves 70 --length_
 ### Example: evaluation (Deezer)
 
 ```bash
-python Parallel.py -d Deezer -m 100 -l 12 -v CarouselExpStreams -a PI --target Optimal -t 0.0 -s 1000000 -n 387 -o ./results/deezer/
+python Parallel.py -d Deezer -m 100 -l 12 -v CarouselExpStreams -a PI --target Optimal -t 0.0 -s 1000000 -n 387 -o ./results/deezer
 ```
 
 ### Full experiment suite

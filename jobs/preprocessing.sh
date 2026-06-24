@@ -20,7 +20,7 @@ for fold in 1 2 3 4 5; do
 done
 
 # Deezer
-python -c "import Datasets; d = Datasets.Datasets(); d.loadDeezer('./data/Deezer'); del d"
+python -c "import Datasets; d = Datasets.Datasets(); d.loadDeezer(user_features_path='./data/Deezer/user_features.csv', playlist_features_path='./data/Deezer/playlist_features.csv', cache_path='./data/Deezer/deezer_50k.npz'); del d"
 
 # Merge per-fold MSLR datasets into consolidated files
 python consolidate_mslr.py

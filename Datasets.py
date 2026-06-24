@@ -68,8 +68,8 @@ class Datasets:
                     docID = 0
                     if relevanceArray is not None:
                         #Previous query's data should be persisted to file/self.members
-                        currentRelevances = numpy.array(relevanceArray,
-                                                         dtype=numpy.int, copy=False)
+                        currentRelevances = numpy.asarray(relevanceArray,
+                                                         dtype=numpy.int64)
                         self.relevances.append(currentRelevances)
                         numpy.savez_compressed(os.path.join(outputFileDir, str(qID) + '_rel'),
                                                relevances=currentRelevances)
@@ -108,7 +108,7 @@ class Datasets:
                     featureVals.append(featureValue)
 
             #Finish processing the final query's data
-            currentRelevances = numpy.array(relevanceArray, dtype=numpy.int, copy=False)
+            currentRelevances = numpy.asarray(relevanceArray, dtype=numpy.int64)
             self.relevances.append(currentRelevances)
             numpy.savez_compressed(os.path.join(outputFileDir, str(qID) + '_rel'),
                                    relevances=currentRelevances)

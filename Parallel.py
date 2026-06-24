@@ -42,7 +42,7 @@ if __name__ == "__main__":
     parser.add_argument('--start', type=int,
                         help='Starting iteration number', default=1)
     parser.add_argument('--stop', type=int,
-                        help='Stopping iteration number', default=1)
+                        help='Stopping iteration number', default=2)
     parser.add_argument('--target', metavar='P', type=str,
                         help='Deezer target policy pi (ignored for MSLR/MQ)',
                         default='Optimal', choices=list(Policy.TARGET_CHOICES))
