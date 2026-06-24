@@ -1,0 +1,30 @@
+# environment 
+venv/
+env/
+
+# data
+data/*
+results/*
+logs/*
+plots/*
+
+# cache
+__pycache__/*
+.pytest_cache/
+*.pyc
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# distribution
+dist/
+build/
+*.egg-info/
+
+# outputs
+output/
+compiled/
